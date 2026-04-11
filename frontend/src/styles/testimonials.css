@@ -1,0 +1,77 @@
+/* ===== GRID ===== */
+.testi-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.testi-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.testi-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== STARS ===== */
+.stars {
+  color: #ffb400;
+  font-size: 16px;
+}
+
+/* ===== TEXT ===== */
+.text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== AUTHOR ===== */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+/* COLORS */
+.avatar--rose {
+  background: #c62828;
+}
+
+.avatar--mint {
+  background: #2e7d32;
+}
+
+.avatar--lavender {
+  background: #6a1b9a;
+}
+
+/* ===== NAME ===== */
+.author h4 {
+  font-size: 14px;
+}
+
+.author span {
+  font-size: 12px;
+  color: #777;
+}

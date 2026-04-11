@@ -1,21 +1,14 @@
 const mongoose = require("mongoose");
 
-const hospitalSchema = new mongoose.Schema(
-  {
-    name: String,
-    location: String,
+const hospitalSchema = new mongoose.Schema({
+  name: String,
+  city: String,
 
-    beds: {
-      icu: { type: Number, default: 0 },
-      general: { type: Number, default: 0 }
-    },
-
-    oxygenAvailable: {
-      type: Boolean,
-      default: true
-    }
-  },
-  { timestamps: true }
-);
+  beds: {
+    ICU: Number,
+    oxygen: Number,
+    general: Number
+  }
+});
 
 module.exports = mongoose.model("Hospital", hospitalSchema);

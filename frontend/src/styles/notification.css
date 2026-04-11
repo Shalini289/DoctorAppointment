@@ -1,0 +1,175 @@
+/* PAGE */
+.notif-page {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #fdecea;
+  color: #c62828;
+  cursor: pointer;
+}
+
+/* EMPTY */
+.notif-empty {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
+
+/* LIST */
+.notif-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CARD */
+.notif-card {
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.notif-card:hover {
+  transform: translateY(-2px);
+}
+
+/* READ STATE */
+.notif-card.read {
+  opacity: 0.6;
+}
+
+/* TIME */
+.notif-card span {
+  font-size: 12px;
+  color: #888;
+}
+/* ===== WRAPPER ===== */
+.notif-bell {
+  position: relative;
+}
+
+/* ===== ICON ===== */
+.bell-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ===== BADGE ===== */
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ===== DROPDOWN ===== */
+.notif-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 260px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 100;
+}
+
+/* HEADER */
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ITEM */
+.notif-item {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fafafa;
+  margin-bottom: 8px;
+}
+
+.notif-item span {
+  font-size: 11px;
+  color: #888;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  color: #777;
+}
+/* ===== CONTAINER ===== */
+.notif-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* ===== HEADER ===== */
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  border: none;
+  background: #fdecea;
+  color: #c62828;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== EMPTY ===== */
+.notif-empty {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+/* ===== LIST ===== */
+.notif-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== ITEM ===== */
+.notif-item {
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.notif-item span {
+  font-size: 11px;
+  color: #888;
+}

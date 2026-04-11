@@ -1,0 +1,116 @@
+/* ===== LAYOUT ===== */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+/* ===== SIDEBAR ===== */
+.admin-sidebar {
+  width: 240px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #D4708F;
+  margin-bottom: 30px;
+}
+
+.admin-sidebar nav a {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+.admin-sidebar nav a.active {
+  background: #fff0f4;
+  color: #D4708F;
+}
+
+/* ===== MAIN ===== */
+.admin-main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* ===== HEADER ===== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.admin-header h1 {
+  font-size: 26px;
+}
+
+/* ===== STATS ===== */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ===== TABLE ===== */
+.admin-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== BADGES ===== */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge-green { background: #e6f7ec; color: #2e7d32; }
+.badge-yellow { background: #fff4e5; color: #e65100; }
+.badge-red { background: #fdecea; color: #c62828; }
+
+/* ===== BUTTONS ===== */
+.admin-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #D4708F;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-btn-outline {
+  border: 1px solid #ddd;
+  background: transparent;
+}
+
+/* ===== HOVER ===== */
+.admin-table tr:hover {
+  background: #fafafa;
+}

@@ -1,0 +1,42 @@
+/* ===== WRAPPER ===== */
+.slot-picker {
+  margin-top: 20px;
+}
+
+/* ===== GRID ===== */
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px,1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ===== BUTTON ===== */
+.slot-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.slot-btn:hover {
+  border-color: #D4708F;
+}
+
+/* SELECTED */
+.slot-btn.active {
+  background: #D4708F;
+  color: white;
+  border-color: #D4708F;
+}
+
+/* BOOKED */
+.slot-btn.booked {
+  background: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}

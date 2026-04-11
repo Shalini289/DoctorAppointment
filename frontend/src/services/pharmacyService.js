@@ -1,0 +1,12 @@
+import { api } from "../utils/api";
+import { getToken } from "../utils/auth";
+
+export const getMedicines = () =>
+  api("/api/pharmacy");
+
+console.log(getMedicines);
+export const placeOrder = (data) =>
+  api("/api/pharmacy/order", "POST", data, getToken());
+
+export const getOrders = () =>
+  api("/api/pharmacy/my-orders", "GET", null, getToken());

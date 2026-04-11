@@ -1,0 +1,44 @@
+/* ===== FORM ===== */
+.review-form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+}
+
+/* ===== TITLE ===== */
+.review-form h3 {
+  margin-bottom: 10px;
+}
+
+/* ===== STARS ===== */
+.stars {
+  font-size: 22px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.stars span {
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.stars span.active {
+  color: #ffb400;
+}
+
+/* ===== TEXTAREA ===== */
+.review-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* ===== BUTTON ===== */
+.review-form button {
+  margin-top: 10px;
+  width: 100%;
+}

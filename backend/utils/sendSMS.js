@@ -1,11 +1,14 @@
 const twilio = require("twilio");
 
-const client = twilio("ACCOUNT_SID", "AUTH_TOKEN");
+const client = twilio(
+  process.env.TWILIO_SID,
+  process.env.TWILIO_AUTH
+);
 
-const sendSMS = async (to, message) => {
+const sendSMS = async (to, msg) => {
   await client.messages.create({
-    body: message,
-    from: "+1234567890",
+    body: msg,
+    from: process.env.TWILIO_PHONE,
     to
   });
 };

@@ -1,0 +1,27 @@
+.health-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  margin-top: 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  background: #fdecea;
+  color: #c62828;
+}
+
+.report {
+  padding: 10px;
+  background: #fafafa;
+  margin-top: 10px;
+}

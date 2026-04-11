@@ -1,25 +1,17 @@
-const FamilyMember = require("../models/FamilyMember");
+const User = require("../models/User");
 
-// ✅ Add member
-const addMember = async (req, res) => {
-  try {
-    const member = await FamilyMember.create(req.body);
-    res.json({ success: true, data: member });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
+const addFamilyMember = async (req, res) => {
+  const user = await User.findById(req.user.id);
+
+  user.familyMembers.push(req.body);
+  await user.save();
+
+  res.json(user.familyMembers);
 };
 
-// ✅ Get all family members
-const getMembers = async (req, res) => {
-  const members = await FamilyMember.find({
-    ownerId: req.params.ownerId
-  });
-
-  res.json({
-    success: true,
-    data: members
-  });
+const getFamily = async (req, res) => {
+  const user = await User.findById(req.user.id);
+  res.json(user.familyMembers);
 };
 
-module.exports = { addMember, getMembers };
+module.exports = { addFamilyMember, getFamily };

@@ -1,0 +1,78 @@
+/* ===== SECTION ===== */
+.hiw {
+  padding: 80px 20px;
+}
+
+/* ===== GRID ===== */
+.hiw-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.hiw-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.hiw-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== NUMBER ===== */
+.hiw-num {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COLORS */
+.hiw-num--rose {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.hiw-num--mint {
+  background: #e6f7ec;
+  color: #2e7d32;
+}
+
+.hiw-num--sky {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.hiw-num--lavender {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+/* ===== TEXT ===== */
+.hiw-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.hiw-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hiw-grid {
+    grid-template-columns: 1fr;
+  }
+}

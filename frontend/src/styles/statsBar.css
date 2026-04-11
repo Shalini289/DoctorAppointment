@@ -1,0 +1,41 @@
+/* ===== BAR ===== */
+.stats-bar {
+  background: linear-gradient(135deg, #fff0f4, #ffffff);
+  padding: 50px 20px;
+}
+
+/* ===== INNER ===== */
+.stats-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+/* ===== CARD ===== */
+.stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== NUMBER ===== */
+.stat-card h2 {
+  font-size: 28px;
+  color: #D4708F;
+}
+
+/* ===== LABEL ===== */
+.stat-card p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}

@@ -1,0 +1,94 @@
+/* ===== PAGE ===== */
+.hospital-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* ===== HEADER ===== */
+.hospital-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hospital-header p {
+  color: #777;
+  margin-top: 5px;
+}
+
+/* ===== GRID ===== */
+.hospital-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.hospital-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.hospital-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TOP ===== */
+.hospital-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-size: 13px;
+  color: #777;
+}
+
+/* ===== BEDS ===== */
+.beds {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===== BED BOX ===== */
+.bed {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* COLORS */
+.bed.icu {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.bed.oxygen {
+  background: #fff4e5;
+  color: #e65100;
+}
+
+.bed.general {
+  background: #e6f7ec;
+  color: #2e7d32;
+}
+
+/* ===== EMPTY ===== */
+.empty {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+}
+
+/* ===== CENTER ===== */
+.center {
+  text-align: center;
+  margin-top: 40px;
+}

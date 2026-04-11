@@ -1,19 +1,28 @@
 const Doctor = require("../models/Doctor");
 
-exports.getBySpecialization = async (req, res) => {
-  try {
-    const { specialization } = req.params;
+const getDoctors = async (req, res) => {
+  const doctors = await Doctor.find();
+  res.json(doctors);
+};
 
-  const doctors = await Doctor.find({
-  specialization: {
-    $regex: specialization.replace(/_/g, " "),
-    $options: "i"
-  }
-});
+const getDoctorById = async (req, res) => {
+  const doctor = await Doctor.findById(req.params.id);
+  res.json(doctor);
+};
 
-    res.json(doctors);
+const addDoctor = async (req, res) => {
+  const doctor = await Doctor.create(req.body);
+  res.json(doctor);
+};
 
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
+const deleteDoctor = async (req, res) => {
+  await Doctor.findByIdAndDelete(req.params.id);
+  res.json({ msg: "Deleted" });
+};
+
+module.exports = {
+  getDoctors,
+  getDoctorById,
+  addDoctor,
+  deleteDoctor
 };
