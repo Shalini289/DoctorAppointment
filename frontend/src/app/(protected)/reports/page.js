@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "../globals.css";
+import "..../globals.css";
 export default function Reports() {
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);

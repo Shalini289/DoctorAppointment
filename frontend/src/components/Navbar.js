@@ -43,6 +43,7 @@ export default function Navbar() {
         <li onClick={() => router.push("/orders")}>Orders</li>
         <li onClick={() => router.push("/profile")}>Appointments</li>
         <li onClick={() => router.push("/chat")}>Chat</li>
+        <li onClick={() => router.push("/family")}>Family</li>
       </ul>
 
       {/* RIGHT SIDE */}

@@ -1,9 +1,7 @@
-const BASE_URL = "http://localhost:5000";
-
 export const api = async (endpoint, options = {}) => {
   const token = localStorage.getItem("token");
 
-  const res = await fetch(`${BASE_URL}${endpoint}`, {
+  const res = await fetch(`http://localhost:5000${endpoint}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
@@ -15,7 +13,8 @@ export const api = async (endpoint, options = {}) => {
   const data = await res.json();
 
   if (!res.ok) {
-    throw new Error(data.msg || "API Error");
+    console.error("Backend Error:", data);
+    throw new Error(data.msg || data.error || "API Error");
   }
 
   return data;

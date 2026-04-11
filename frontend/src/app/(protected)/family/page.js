@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../../utils/api";
 import { getToken } from "../../utils/auth";
+import "@/styles/family.css";
 
 export default function FamilyPage() {
   const token = getToken();
