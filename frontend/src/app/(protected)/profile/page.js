@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getMyAppointments } from "../../services/appointmentService";
-import AppointmentCard from "../../components/AppointmentCard";
-import "../globals.css"
+import { getMyAppointments } from "@/services/appointmentService";
+import AppointmentCard from "@/components/AppointmentCard";
+import "@/styles/appointment.css"
 export default function Profile() {
   const [appointments, setAppointments] = useState([]);
 

@@ -1,55 +1,144 @@
-.family-page {
-  max-width: 1000px;
+/* ===== FAMILY PAGE ===== */
+.family-container {
+  max-width: 1100px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 
+/* ===== TITLE ===== */
+.family-container h2 {
+  font-size: 30px;
+  color: #d4708f;
+  margin-bottom: 25px;
+}
+
+/* ===== FORM ===== */
 .family-form {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.family-form input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-
-.family-grid {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(212, 112, 143, 0.08);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+/* ===== INPUT ===== */
+.family-form input {
+  padding: 14px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  outline: none;
+  background: #fafafa;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.family-form input:focus {
+  border-color: #d4708f;
+  box-shadow: 0 0 0 4px rgba(212,112,143,0.10);
+  background: white;
+}
+
+/* ===== BUTTON ===== */
+.family-form button {
+  background: linear-gradient(135deg, #d4708f, #b85c7b);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.family-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== LIST ===== */
+.family-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
+/* ===== CARD ===== */
 .family-card {
-  padding: 20px;
-  border-radius: 16px;
   background: white;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(212,112,143,0.08);
+  border: 1px solid #f8dbe4;
+  transition: 0.3s;
 }
 
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #D4708F;
-  color: white;
+.family-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== CARD TEXT ===== */
+.family-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.family-card p {
+  color: #666;
+  margin-bottom: 6px;
+}
+
+/* ===== ACTIONS ===== */
+.family-actions {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.actions {
-  margin-top: 10px;
-  display: flex;
-  gap: 5px;
+/* ===== EDIT BUTTON ===== */
+.family-actions button:first-child {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #fff0f5;
+  color: #d4708f;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.danger {
+/* ===== DELETE BUTTON ===== */
+.family-actions button:last-child {
+  flex: 1;
+  padding: 10px;
+  border: none;
   background: #fdecea;
-  color: red;
+  color: #c62828;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ===== HOVER ===== */
+.family-actions button:hover {
+  opacity: 0.9;
+}
+
+/* ===== EMPTY TEXT ===== */
+.family-list p {
+  color: #888;
+  text-align: center;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .family-form {
+    grid-template-columns: 1fr;
+  }
+
+  .family-actions {
+    flex-direction: column;
+  }
 }

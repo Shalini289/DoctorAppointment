@@ -1,0 +1,97 @@
+/* ===== PAGE ===== */
+.order-page {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== TITLE ===== */
+.order-page h2 {
+  font-size: 30px;
+  color: #d4708f;
+  margin-bottom: 25px;
+}
+
+/* ===== ORDER LIST ===== */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== ORDER CARD ===== */
+.order-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(212,112,143,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #f8dbe4;
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== LEFT ===== */
+.order-info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.order-info p {
+  color: #777;
+  margin-bottom: 4px;
+}
+
+/* ===== STATUS ===== */
+.order-status {
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* STATUS COLORS */
+.order-status.pending {
+  background: #fff4e5;
+  color: #f57c00;
+}
+
+.order-status.delivered {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.order-status.cancelled {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* ===== ACTION ===== */
+.order-card button {
+  padding: 10px 18px;
+  border: none;
+  background: linear-gradient(135deg, #d4708f, #b85c7b);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.order-card button:hover {
+  opacity: 0.9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .order-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}

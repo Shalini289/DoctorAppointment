@@ -2,13 +2,18 @@ const express = require("express");
 const router = express.Router();
 
 const {
-  addFamilyMember,
-  getFamily
+  getFamily,
+  addFamily,
+  updateFamily,
+  deleteFamily
 } = require("../controllers/familyController");
 
-const { protect } = require("../middleware/authMiddleware");
+router.get("/", getFamily);
 
-router.post("/", protect, addFamilyMember);
-router.get("/", protect, getFamily);
+router.post("/", addFamily);
+
+router.put("/:id", updateFamily);
+
+router.delete("/:id", deleteFamily);
 
 module.exports = router;

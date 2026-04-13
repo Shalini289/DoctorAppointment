@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getMedicines } from "../../services/pharmacyService";
-import MedicineCard from "../../components/MedicineCard";
-import Cart from "../../components/Cart";
+import { getMedicines } from "@/services/pharmacyService";
+import MedicineCard from "@/components/MedicineCard";
+import Cart from "@/components/Cart";
 
 export default function Pharmacy() {
   const [data, setData] = useState([]);

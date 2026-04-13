@@ -9,7 +9,7 @@ import {
   getOrdersAdmin,
   updateOrder,
   updateDoctor
-} from "../../services/adminService";
+} from "@/services/adminService";
 
 export default function AdminDashboard() {
   const emptyDoctorForm = {

@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
-import { bookAppointment } from "../../services/appointmentService";
+import { bookAppointment } from "@/services/appointmentService";
 
 export default function Booking() {
   const doctor = useSearchParams().get("id");

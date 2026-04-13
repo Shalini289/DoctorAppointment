@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { api } from "../../utils/api";
-import { getToken } from "../../utils/auth";
+import { api } from "@/utils/api";
+import { getToken } from "@/utils/auth";
 
 export default function HealthPage() {
   const token = getToken();
